@@ -1,11 +1,18 @@
 const express = require('express')
 const router = express.Router()
 require('dotenv').config();
-const {getRecipe,postRecipe} = require("../../controllers/controllers_recipe")
+const {
+    getAllRecets, 
+    getRecipe,
+    postRecipe, 
+    getApiInfo,
+    RecipeId, 
+} = require("../../controllers/controllers")
 
 
 
-router.get("/:idRecipe",getRecipe)
+router.get("/:id",RecipeId);
+
 
 router.post("/",postRecipe)
 

@@ -11,7 +11,7 @@ module.exports = (sequelize) => {
       allowNull:false,
       primaryKey:true,
     },
-    name: {
+    title: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -23,7 +23,7 @@ module.exports = (sequelize) => {
       type:DataTypes.STRING,
       allowNull: false,
     },
-    health_score:{
+    healthScore:{
       type:DataTypes.INTEGER,
       allowNull: false,
     },
