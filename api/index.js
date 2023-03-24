@@ -23,9 +23,9 @@ const { conn } = require('./src/db.js');
 // Syncing all the models at once.
 async function main(){
   try {
-      await conn.sync({force:true})
+      await conn.sync({force:false})
       server.listen(3001,() =>{
-      console.log("Server is listening on port", 3001)  
+      console.log("Server is listening on port", 3001)
       })
   } catch (error) {
       console.error("Unable to connect to the database:",error)

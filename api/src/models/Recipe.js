@@ -28,7 +28,7 @@ module.exports = (sequelize) => {
       allowNull: false,
     },
     steps:{
-      type:DataTypes.STRING,
+      type:DataTypes.JSON,
       allowNull:false,
     },
     createdInDb:{
