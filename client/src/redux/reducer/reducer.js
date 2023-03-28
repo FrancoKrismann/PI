@@ -1,15 +1,29 @@
-// import {ADD_FAVORITES,DELETE_FAVORITE,FILTER,ORDER} from "../actions/action-types"
+ import {GET_RECIPES,ERROR} from "../actions type/actions-types.js"
 
 
 
 const initialState ={
-myFavorites:[],
-allCharacters:[],
+recipes:["pasta"],
 errors:{}
 }
-
-const rootReducer = (state = initialState,{type,payload}) =>{
-
+console.log("state:" + initialState)
+const rootReducer = (state = initialState, action) =>{
+switch (action.type) {
+    case GET_RECIPES:
+        console.log("Llega al reducer")
+        return{
+            ...state,
+            recipes:action.payload,
+            errors:{}
+        }
+    case ERROR:
+        return{
+            ...state,
+            errors:action.payload
+        }
+    default:
+        return {...state}
+}
 }
 
 

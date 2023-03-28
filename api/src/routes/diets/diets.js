@@ -1,11 +1,10 @@
 const express = require('express')
 const router = express.Router()
 require('dotenv').config();
-
-
-
-
 const{getDiets} = require("../../controllers/DB_DIETS.js")
+
+
+
 router.get("/db", async(req, res)=>{
     try {
         const diets = await getDiets()

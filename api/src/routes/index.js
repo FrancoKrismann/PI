@@ -14,6 +14,6 @@ router.use(express.json())
 router.use(cors())
 router.use("/recipe", recipe)
 router.use("/types", diet)
-// router.use("/recipes",recipes)
+router.use("/recipes",recipes)
 
 module.exports = router ;

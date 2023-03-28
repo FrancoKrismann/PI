@@ -1,11 +1,115 @@
 .container {
-    background-color: red;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+      position:fixed;
+      overflow: hidden;
+      
+      background: -webkit-linear-gradient(to right, #f7b733, #fc871a); 
+      background: linear-gradient(to right, #f7b733, #fc5e1a); 
+      
+      height: 100%;
+      width: 100%;
+      margin: 0;
 }
 
-/* .content{
-    
-} */
+.intro {
+      position: relative;
+      background-color: white;
+      border:3px solid #000000;
+      border-radius: 10%;
+      display:block;
+      text-align: center;
+      height: 40vh;
+      width: 45vh;
+      left:25vh;
+      bottom:15vh;
+}
+
+
+
+.paraf_1 {
+      position: absolute;
+      font-family: 'Alkatra', cursive;
+      font-size: 60px;
+      margin: 0;
+      top:-1vh;
+      right: 2vh;
+}
+
+.paraf_2 {
+      position: absolute;
+      font-family: 'Roboto', sans-serif;
+      font-size: 40px;
+      top: 15vh;
+      right: 12vh;
+}
+
+.dessing {
+      position:absolute;
+      background-color: #292424;
+      height: 10vh;
+      width: 80%;
+      bottom: 60%;
+      right: 70%;
+      transform: rotate(-40deg);
+}
+
+.dessing_2 {
+      position:absolute;
+      background-color: #292424;
+      height: 10vh;
+      width: 80%;
+      bottom: 60%;
+      right: 50%;
+      transform: rotate(-40deg);
+}
+
+
+img {
+      
+      position: relative;
+      border-radius:20%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+}
+
+.img {
+      height: 50vh;
+      left: 110vh; 
+      top: 10%;
+}
+
+.img_2 {
+      height: 30vh;
+      right: -30vh;
+      top: 25vh;
+      border: 3px solid #000000;
+      transform: rotate(30deg);
+}
+
+
+.img_3 {
+      height: 30vh;
+      top: 25vh;
+      left: 40vh;
+      border: 3px solid #000000;
+      transform: rotate(-20deg);
+}
+
+
+/*  */
+
+.button {
+      position: absolute;
+      left: 20%;
+      top: 80%;
+      padding: 20px 35px;
+      font-size: 20px;
+      background-color: #ffffff;
+      color: #000000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+      background-color: #fc4a1a;
+}
