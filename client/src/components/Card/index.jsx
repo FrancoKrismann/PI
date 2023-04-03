@@ -4,14 +4,23 @@ import {Link} from "react-router-dom"
  const Card = ({image, name , diets, id }) => {
  
     return (
+        // <Link to="/detail">
+                
+        //     </Link>
         <div className={styles.container}>
             <img src={image} alt={image} />
-            <p>Name:{name}</p>
-            <h3>Diets:</h3>
-            {diets?.map((diet, index) => <h3 key={index}> {diet}, </h3> )}
-            <Link to="/detail">
-                <p>Detail</p>
-            </Link>
+            <div className={styles.info}>
+                <h3>Name:</h3>
+            <p className={styles.name}>{name}</p>
+            <h3>Diets:</h3>  
+            
+            <p className={styles.diets}>{diets?.map((diet, index) => 
+            <p className ={styles.diet} key={index}> {diet}, </p> )} </p> 
+            </div>
+               
+            
+            
+            
             
         </div>
     )

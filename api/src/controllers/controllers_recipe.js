@@ -93,6 +93,7 @@ return ["Not found recipe by name on API"]
 const getDBName = async(name) => {
 
 const infoDB = await getDbInfo()  
+console.log("DB:" + infoDB)
 if (infoDB) {
     const recipeNameDB = await infoDB.filter(recipe => recipe.title?.toLowerCase().includes(name.toLowerCase()));
         if(recipeNameDB.length > 0){

@@ -1,19 +1,23 @@
 .container {
-    position: fixed;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
     background: #abbaab;  
     background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  
     background: linear-gradient(to right, #ffffff, #abbaab); 
-
-    height: 100%;
+    
+    height: 1900px;
     width: 100%;
     margin: 0;
 }
 
 
 .nav {
-    position: absolute;
+    /* position: absolute; */
     margin-top: 20px;
-    padding: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
     border: 1px solid black;
     
     height: 10vh;
@@ -36,38 +40,38 @@
 }
 
 .container_filtros {
-    position:absolute;
+    /* position:absolute; */
     border: 3px solid rgb(25, 0, 255);
-
+    margin-bottom: 20px;
 
     top: 22vh;
     left: 30vh;
 }
 
+.paginado {
+    /* position: absolute; */
+    border:3px solid black;
+}
 
 
 .container_cards {
-    position: absolute;
-    display: flex;
-    justify-content: center;
+    /* position: absolute; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    text-align: center;
+    margin-top: 10vh;
+    padding-top:20px;
+    
     flex-wrap: wrap;
     row-gap: 5px;
     gap: 10px;
-    border: 3px solid red;
+    background-color: aliceblue;
     
-    top: 25vh;
-    right: 25vh;
-    height: 70vh;
-    width: 70%;
+    /* top: 25vh;
+    right: 25vh; */
+    height: 120vh;
+    width: 90%;
     
 }
 
-.cards {
-    justify-content: space-between;
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; 
-    border:4px solid rgb(159, 17, 17)
-    
-}

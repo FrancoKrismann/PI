@@ -14,13 +14,14 @@ const getDbInfo = async () => {
         let response = await dataDB?.map(recipe => {
             return {
                 id: recipe.id,
-                name: recipe.name,
+                title: recipe.title,
                 summary: recipe.summary,
                 score: recipe.score,
                 healthScore: recipe.healthScore,
                 image: recipe.image,
                 steps: recipe.steps,
                 diets: recipe.diets?.map(diet => diet.name),
+                createdInDb:recipe.createdInDb,
             }
         });
 return response;

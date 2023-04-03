@@ -1,11 +1,48 @@
 .container {
-    position: relative;
+    
+    padding: 20px 20px;
+    background-color: aliceblue;
+    display: flex;
+    
     /* display: flex;
-    flex-wrap: wrap;
+    
     flex-direction: column; */
-    border:3px solid red;
-    height: 40vh;
-    width: 30vh;
-    left: 40vh;
+    border: 2px solid black;
+    align-items: center;
+    border-radius:20px;
+    height: 30vh;
+    width: 50vh;
+    left: 35vh;
     top: 30vh;
 }
+
+.info {
+    margin-left:40px;
+}
+.container img {
+    height: 20vh;
+    margin-left:15px;
+}
+
+.name {
+    
+    margin: 0;
+    font-size: 20px;
+}
+
+.container h3 {
+    margin: 0;
+}
+
+.diets {
+    margin:0;
+    
+    
+}
+
+.diet {
+    margin: 0;
+    font-size: 20px;
+    
+}
+
